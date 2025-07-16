@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<!-- TO-DO: ADD META TAG AND NAME HERE -->
+	<meta name="author" content="Leah Morales">
+	<title>Form Activity Solution File</title>
+<!-- TO-DO: ADD LINK TO CSS HERE -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+<!-- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -->
+			<form action="https://wp.zybooks.com/form-viewer.php" method="post">
+				<label for="name">Full Name<span class="required">*</span></label>
+				<input type="text" id="name" name="name" autocomplete="name" required>
+
+				<label for="email">Email<span class="required">*</span></label>
+				<input type="email" id="email" name="email" autocomplete="email" required>
+
+				<label for="phone">Phone<span class="required">*</span></label>
+				<input type="tel" id="phone" name="phone" autocomplete="tel" required>
+
+				<fieldset>
+					<legend>Preferred Contact Method<span class="required">*</span></legend>
+
+					<input id="radioemail" type="radio" name="contact" value="email" checked>
+					<label for="radioemail">Email</label>
+
+					<input id="radiophone" type="radio" name="contact" value="phone">
+					<label for="radiophone">Phone</label>
+				</fieldset>
+
+				<label for="residence">State of Residence</label>
+				<select name="residence" id="residence">
+					<option value="1">Alabama, AL</option>
+					<option value="2">Alaska, AK</option>
+					<option value="3">Arizona, AZ</option>
+					<option value="4">Arkansas, AR</option>
+					<option value="5">California, CA</option>
+					<option value="6">Colorado, CO</option>
+					<option value="7">Connecticut, CT</option>
+					<option value="8">Delaware, DE</option>
+
+					<option value="9">Florida, FL</option>
+					<option value="10">Georgia, GA</option>
+					<option value="11">Hawaii, HI</option>
+					<option value="12">Idaho, ID</option>
+					<option value="13">Illinois, IL</option>
+					<option value="14">Indiana, IN</option>
+					<option value="15">Iowa, IA</option>
+					<option value="16">Kansas, KS</option>
+					<option value="17">Kentucky, KY</option>
+					<option value="18">Louisiana, LA</option>
+					<option value="19">Maine, ME</option>
+					<option value="20">Maryland, MD</option>
+					<option value="21">Massachusetts, MA</option>
+
+					<option value="22">Michigan, MI</option>
+					<option value="23">Minnesota, MN</option>
+					<option value="24">Mississippi, MS</option>
+					<option value="25">Missouri, MO</option>
+					<option value="26">Montana, MT</option>
+					<option value="27">Nebraska, NE</option>
+					<option value="28">Nevada, NV</option>
+					<option value="29">New Hampshire, NH</option>
+					<option value="30">New Jersey, NJ</option>
+					<option value="31">New Mexico, NM</option>
+					<option value="32">New York, NY</option>
+					<option value="33">North Carolina, NC</option>
+					<option value="34">North Dakota, ND</option>
+
+					<option value="35">Ohio, OH</option>
+					<option value="36">Oklahoma, OK</option>
+					<option value="37">Oregon, OR</option>
+					<option value="38">Pennsylvania, PA</option>
+					<option value="39">Rhode Island, RI</option>
+					<option value="40">South Carolina, SC</option>
+					<option value="41">South Dakota</option>
+					<option value="42">Tennessee, TN</option>
+					<option value="43">Texas, TX</option>
+					<option value="44">Utah, UT</option>
+					<option value="45">Vermont, VT</option>
+					<option value="46">Virginia, VA</option>
+					<option value="47">Washington, WA</option>
+					<option value="48">West Virginia, WV</option>
+					<option value="49">Wisconsin, WI</option>
+					<option value="50">Wyoming, WY</option>
+				</select>
+
+				<label for="comments">Comments</label>
+				<textarea id="comments" name="comments"></textarea>
+
+				<input type="submit">
+			</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
